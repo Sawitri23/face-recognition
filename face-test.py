@@ -1,8 +1,5 @@
 from PIL import Image, ImageDraw
 import face_recognition
-import numpy as np
-import pickle
-
 known_face_names, known_face_encodings = pickle.load(open('faces.p', 'rb'))
 
 image = Image.open('test/group1.jpg')
